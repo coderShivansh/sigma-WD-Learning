@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 - Multicolor Navbar</title>
+
+    <style>
+        
+         :root{
+            --primary-color: black;
+            --text-color: white;
+            --secondary-color: #6ea5fccc;
+        }
+
+        /* :root{
+            --primary-color: white;
+            --text-color: black;
+            --secondary-color: #6ea5fccc;
+        } */
+        
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            background-color: var(--primary-color);
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;  
+        }
+
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 40px;
+            font-size: large;
+            font-weight: 200;
+        }      
+
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .container{
+            width: 90vw;
+            height: 85vh;
+            border: 2px solid var(--primary-color);
+            margin: 15px 5vw 0px 5vw; 
+            background-color: var(--text-color);
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .box1{
+            border: 1px solid black;
+            width: 30vw;
+            height: 65vh;
+            margin: auto 5vw auto 5vw;
+            background-color: peru;
+        }
+
+        .box2{
+            border: 1px solid black;
+            width: 30vw;
+            height: 65vh;
+            position:relative;
+            margin: auto 5vw auto 5vw;
+            background-color: tomato;
+        }
+        .container-text{
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            margin: 3vh 9vw 10vh 9vw;
+            padding: 45px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .container-text ::selection {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+        .floating-logo{
+            position: fixed;
+            right: 4vw;
+            bottom: 7vh;
+        }
+        .footer{
+            border: 2px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            width: 100vw;
+            height: 10vh;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"> 
+                <img src="Drittle Tech logo.png" width="50px" alt="company logo drittle tech">
+            </a> 
+            </div>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="floating-logo">
+                <img src="drittle tech logo circle.png" alt="Company Logo" width="100px">
+
+        </div>
+        <div class="container-text">
+            <p>Welcome to this Sigma Web Development Express </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

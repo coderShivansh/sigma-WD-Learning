@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Multicolor Navbar</title>
+
+    <style>
+        
+         :root{
+            --primary-color: black;
+            --text-color: white;
+            --secondary-color: #6ea5fccc;
+        }
+
+        /* :root{
+            --primary-color: white;
+            --text-color: black;
+            --secondary-color: #6ea5fccc;
+        } */
+        
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+        }
+           
+        .navbar{
+                background-color: var(--primary-color);
+                align-items: center;
+                justify-content: flex-start;
+                display: flex;                
+            }
+
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 40px;
+            font-size: large;
+            font-weight: 200;
+        }      
+
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"> 
+                <img src="Drittle Tech logo.png" width="50px" alt="company logo drittle tech">
+            </a> 
+            </div>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+
+    </header>
+</body>
+</html>

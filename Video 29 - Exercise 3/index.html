@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 - Card </title>
+    <style>
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box;  */
+            background-color: rgb(147, 168, 186);
+        }
+        .container{
+            /* position: absolute; */
+            border-radius: 10px;
+            width:250px;
+            height:400px;
+            margin: 10px;
+            background-color: white;
+            /* border: 2px solid black; */
+            display: inline-block;
+            padding: 5px;
+        }
+        
+        img{
+            border-radius: 10px;
+        }
+
+        .tags span{
+            border: 2px solid black;
+            padding: 4px;
+        }
+
+        .button{
+            text-align: center;
+
+        }
+        .subtitle{
+            /* width: 250 px; */
+            padding: 5 px;
+        }
+        a{
+            text-decoration: none;
+            color: #095fe8;
+            font-size: medium;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+    <div class="container">
+        <div class="card-container">
+            <div class="image">
+                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699574400&semt=ais" alt="Nature" width="250px">
+            </div>
+            <div class="tags">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+            <div class="subtitle">
+                <h2>Lake of Shivansh</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, facilis! Quia exercitationem totam alias, accusantium sequi dolor inventore corporis, distinctio repudiandae vel eligendi.
+                </p>
+            </div>
+            
+            <div class="button">
+                   <a href="#"> Read More </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
